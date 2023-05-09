@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -45,12 +47,26 @@ public class Main {
         if(flag & 0b00001000 ==0) System.out.println("온도는 0도 이하");
         else System.out.println("온도는 0도 이상"); */
 
-        /* 비트 시프트 연산 */
+        /* 비트 시프트 연산
         byte a = 5; //0b00000101 로 저장됨
         byte b = (byte) (a << 2); // a 값을 왼쪽으로 2비트만큼 이동.
         // 즉 0b00000101 > 0b00010100
+        // >> 와 <<는 1비트씩 시프트 할 때마다 나누기2 / 곱하기 2의 효과가 각각 나타난다.
+
+        // 논리적 오른쪽 시프트
+        byte x = 20; // 20 할당
+        byte y = (byte)(x >>> 2);
 
         System.out.println(b); // 20이 출력됨
+        System.out.println(y); // 0b00010100 -> 0b00000101  => 5
+
+        //산술적 오른쪽 시프트
+        byte k = (byte) 0xf8; // 1111 1000
+
+        // 2의 보수 표현법 공부하기
+
+         */
+
 
 
 
