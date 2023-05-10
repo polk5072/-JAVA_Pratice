@@ -7,7 +7,7 @@ public class Practice_Sample {
         System.out.print("금액을 입력하시오: ");
         int amount = scanner.nextInt();
 
-        while(amount != 0) {            // 실습 예제는 if문이 실습 대상이지만 코드가 더러워져 효율적으로 반복문을 사용함.
+        while(amount != 0) {            // 실습 예제는 if문이 실습 대상이지만 변수의 갯수를 하나로 제한하여 문제를 풀음
             if (amount > 50000) {
                 System.out.println("오만원권 : " + amount / 50000 + "매");
                 amount %= 50000;        // amount에서 50000의 몫의 갯수만큼 제한 후 남은 금액을 amount에 저장한다.
