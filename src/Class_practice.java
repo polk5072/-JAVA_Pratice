@@ -9,6 +9,10 @@ public class Class_practice {
             this.name = n;
         }
 
+        public Circle(){
+
+        }
+
         public double getArea() {
             return 3.14 * radius * radius;
         }
